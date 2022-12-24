@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
+    <title>صفحة2</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="icon" src="Images/logo.png" alt="Logo Robbie Lens" width="50px" height="50px"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">صفحة الرئيسية </a></li>
+                <li><a href="page1.html">صفحة1 </a></li>
+                <li><a href="page2.html">صفحة2</a></li>
+                <li><a href="Contact.html">إتصل بنا </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="block1">
+            <h1 class="block1__heading">قصة: ليلى والذئب:</h1>
+            <a href="https://www.youtube.com/watch?v=AhmuLygA7h4" class="block1__link" target="_blank">التعليمة1: هَيَّا لنَمْرَحْ قَليلًا</a>
+        </div>
+        <section class="block2">
+            <h2 class="block2__heading">التعليمة2: هَيَّا لنَقْرَأَ القصَّةَ</h2>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 6</div>
+                  <img src="images/5.png" style="width:100%" alt="image1" class="img">
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 6</div>
+                  <img src="images/6.png" style="width:100%" alt="image2" class="img">
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 6</div>
+                  <img src="images/7.png" style="width:100%" alt="image3" class="img">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="images/8.png" style="width:100%" alt="image4" class="img">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="images/9.png" style="width:100%" alt="image5" class="img">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="images/10.png" style="width:100%" alt="image6" class="img">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                
+                
+                
+                <div class="evalution">
+                    <h3 class="evalution__heading">قيم قرَاءَتَكَ للقصَّة </h3>
+                    <p class="evalution__desc">.../10</p>
+                 </div>
+        </section>
+        <section class="Answers">
+            <div class="tableau">
+                <h3 class="heading">التعليمة3: أَضَعُ عَلَامَة (+) في الخَانَة المُنَاسبَة</h3>
+                <table>
+                    <thead>
+                        <tr>
+                          <th>خَائفَةٌ</tdh>
+                          <th>شُجَاعٌ</th>
+                          <th>مَاكرٌ</th>
+                          <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>الحطَّابُ</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>الذئْبُ</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>لَيْلَى</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            <div class="checkbox">
+                <h3 class="heading">التعليمة4: أَخْتَارُ منَ الكَلمَات المَعْرُوضَة مُرَادفَة كَلّ كَلمَة </h3>
+                <form action="#" method="get">
+                    <div>
+                        <span><strong>اسْتغَاثَة:</strong></span>
+                        <input type="checkbox" id="طَلَبُ النَجْدَة" name="طَلَبُ النَجْدَة" value="طَلَبُ النَجْدَة">
+                        <label for="طَلَبُ النَجْدَة">طَلَبُ النَجْدَة</label>
+                        <input type="checkbox" id="صُرَاخَ" name="صُرَاخَ" value="صُرَاخَ">
+                        <label for="صُرَاخَ">صُرَاخَ </label>
+                        <input type="checkbox" id="تَقْديمُ يَد المُساعَدَة" name="تَقْديمُ يَد المُساعَدَة" value="تَقْديمُ يَد المُساعَدَة">
+                        <label for="تَقْديمُ يَد المُساعَدَة">تَقْديمُ يَد المُساعَدَة </label>
+                    </div>
+                    <div>
+                        <span><strong>مُسْرعًا:</strong></span>
+                        <input type="checkbox" id="مُتَرَجّلًا" name="مُتَرَجّلًا" value="مُتَرَجّلًا">
+                        <label for="مُتَرَجّلًا">مُتَرَجّلًا </label>
+                        <input type="checkbox" id="مُهَرْولًا" name="مُهَرْولًا" value="مُهَرْولًا">
+                        <label for="مُهَرْولًا">مُهَرْولًا </label>
+                        <input type="checkbox" id="مُتَمَهّلًا" name="مُتَمَهّلًا" value="مُتَمَهّلًا">
+                        <label for="مُتَمَهّلًا">مُتَمَهّلًا</label>
+                    </div>
+                    <div>
+                        <span><strong>الذُعْرُ:</strong></span>
+                        <input type="checkbox" id="الفَرَحُ" name="الفَرَحُ" value="الفَرَحُ">
+                        <label for="الفَرَحُ">الفَرَحُ </label>
+                        <input type="checkbox" id="الحُزْنُ" name="الحُزْنُ" value="الحُزْنُ">
+                        <label for="الحُزْنُ">الحُزْنُ </label>
+                        <input type="checkbox" id="الهَلَعُ" name="الهَلَعُ" value="الهَلَعُ">
+                        <label for="الهَلَعُ">الهَلَعُ</label>
+                    </div>
+                </form>
+            </div>
+            <div class="ouinon">
+              <h3 class="heading">التعليمة5: أُجيبُ بـ"نَعَمْ" أوْ "لَا":</h3>
+              <div>
+                <span><strong>قَتَلَتْ لَيْلَى الذئْبَ:</strong></span>
+                <input type="radio" id="oui" name="oui" value="oui">
+                <label for="oui">نَعَمْ </label>
+                <input type="radio" id="non" name="non" value="non">
+                <label for="non">لَا </label>
+              </div>
+
+              <div>
+                <span><strong>أَنْقَذَ الفَلَّاحُ لَيْلَى وَجَدَّتَهَا:</strong></span>
+                <input type="radio" id="oui" name="oui" value="oui">
+                <label for="oui">نَعَمْ </label>
+                <input type="radio" id="non" name="non" value="non">
+                <label for="non">لَا </label>
+              </div>
+
+              <div>
+                <span><strong>أَرْسَلَتْ الأُمُّ لَيْلَى لزيَارَة جَدَّتهَا:</strong></span>
+                <input type="radio" id="oui" name="oui" value="oui">
+                <label for="oui">نَعَمْ </label>
+                <input type="radio" id="non" name="non" value="non">
+                <label for="non">لَا </label>
+              </div>
+              
+            </div>
+
+            <div class="titre">
+                <h3 class="heading">التعليمة6: أُقْتَرحُ عُنْوَانًا آخَرَ للقصَّة</h3>
+                <p></p>
+            </div>
+            <div class="couleur">
+                <h3 class="heading">بَعْدَ قرَاءَة القصَّة يُمْكنُكَ طبَاعَةُ هذه الوَرَقَة وَتَلْوينُهَا:</h3>
+                <img src="images/11.png" alt="Image-couleur">
+            </div>
+             
+           
+        </section>
+
+        
+    </main>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+</body>
+</html>

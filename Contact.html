@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
+    <title>إتصل بنا</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="icon" src="Images/logo.png" alt="Logo Robbie Lens" width="50px" height="50px"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">صفحة الرئيسية </a></li>
+                <li><a href="page1.html">صفحة1 </a></li>
+                <li><a href="page2.html">صفحة2</a></li>
+                <li><a href="Contact.html">إتصل بنا </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section >
+           <form action="#" method="post" class="contact" >
+             <fieldset style="width: 50%; height: 170px; padding: 10px;">
+                <legend>votre compte</legend>
+                <label for="clé-inscri"> clé inscription</label>
+                <input type="text" name="clé-inscri" id="clé-inscri"><br><br>
+                <label for="user">Nom d'utilisateur</label>
+                <input type="text" name="user" id="user"><br><br>
+                <label for="password">Mot de passe</label>
+                <input type="text" name="password" id="password">
+
+             </fieldset>
+
+             <fieldset style="width: 50%; height: 345px; padding: 10px;">
+                <legend>Information personnelles</legend>
+                <label for="age"> Age</label>
+                <input type="number" name="age" id="age"><br><br>
+                <label for="date">Date de naissance</label>
+                <input type="date" name="date" id="date"><br><br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email"><br><br>
+
+                <label for="telephone">Numéro de Telephone</label>
+                <input type="tel" name="telephone" id="telephone"><br><br>
+                <label for="CV">Votre CV</label>
+                <input type="file" name="CV" id="CV"><br><br>
+                <label for="Pays">Votre Pays</label>
+                 <select name="Pays" id="Pays">
+                    <option value="Tunisie">Tunisie</option>
+                    <option value="Algérie">Algérie</option>
+                    <option value="France">France</option>
+                 </select><br><br>
+                 <span>Vos centre interet:</span>
+                <input type="checkbox" name="intret" id="intret">
+                <label for="intret"> Sport </label>
+                <input type="checkbox" name="lecture" id="lecture">
+                <label for="lecture"> Lecture </label>
+                <input type="checkbox" name="Travail" id="Travail">
+                <label for="Travail"> Travail Humanitaire </label>
+            </fieldset>
+         <div>
+            <span>Souhaitez vous recevoire nos actualités par mail:</span>
+            <label for="oui">Oui </label>
+            <input type="radio" id="oui" name="oui" value="oui">
+            <label for="non">Non </label>
+            <input type="radio" id="non" name="non" value="non">
+        </div> 
+        
+        <div>
+            <label for="comment">Saissez un commentaire: </label><br>
+            <textarea name="comment" id="comment" cols="12" rows="5">Vos commentaire...</textarea>            
+        </div>
+        <div class="btn"> 
+         <input type="submit" value="Envoyer">     
+         <input type="button" value="annuler">
+        </div>
+           </form>
+        </section>
+    </main>
+</body>
+</html>
