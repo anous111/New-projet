@@ -14,7 +14,7 @@ a{
     text-decoration: none;
 
 }
-header,footer {
+header{
   background-color: white;
   padding: 20px 50px;
   display: flex;
@@ -94,11 +94,10 @@ a:hover{
 
   .evalution{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     gap: 10px;
     width: 200px;
     border: 1px solid black;
-    margin: auto;
   }
 .Answers__heading{
     text-align: center;
@@ -108,8 +107,7 @@ a:hover{
     border-collapse: collapse;
     color: black;
     text-align: center;
-    width: 50%;
-    margin: auto;
+    width: 100%;
   }
   td,th{
     border: 1px solid black;
@@ -126,26 +124,23 @@ a:hover{
     display: flex;
     flex-direction: column;
     color: rgb(0, 0, 0);
-    margin: 3%;
-    PADDING: 1%;
+
   }
 
  .couleur{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
  } 
 
  .ouinon{
     display: flex;
     flex-direction: column;
-    align-items: center;
  }
 
  .titre{
     display: flex;
     flex-direction: column;
-    align-items: center;
  }
  .titre p{
     width: 200px;
@@ -167,7 +162,9 @@ a:hover{
   position: relative;
   margin: auto;
 }
-
+.contact{
+  margin: 20px;
+}
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -182,6 +179,30 @@ a:hover{
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+}
+.submit{
+  padding: 10px;
+  font-size: 13px;
+  color: #fff ;
+  background-color: green;
+  border-radius: 20px;
+  font-weight: 600;
+}
+.submit:hover{
+  background-color: rgb(117, 238, 117);
+  cursor: pointer;
+}
+.annuler{
+  padding: 10px;
+  font-size: 13px;
+  color: #fff ;
+  background-color:red;
+  border-radius: 20px;
+  font-weight: 600;
+}
+.annuler:hover{
+  background-color: rgb(77, 2, 2);
+  cursor: pointer;
 }
 /* Position the "next button" to the right */
 .next {
@@ -236,8 +257,45 @@ a:hover{
   }
 
   .iframe{
-    margin-left: 20%;
-    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
+  #carreau{
+    height: 30px;
+    width: 30px;
+    background: white;
+    border: 1px solid black;
     
+  }
+  .form__row{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  @media screen and (max-width: 768px) {
+    header{
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center,
+    }
+    .block1{
+      background-color: rgb(54, 189, 54);
+      width: 100%;
+      height: 200px;
+      text-align: center;
+  }
+  
+  iframe{
+    width: 80%;
+  }
+  .block1--m{
+    height: 100px;
+  }
+  .grid-paysages{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  }
