@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
-    <title>إتصل بنا</title>
+    <title> تقييمصفحة </title>
 </head>
 <body>
     <header>
@@ -18,7 +18,7 @@
                 <li><a href="index.html">صفحة الرئيسية </a></li>
                 <li><a href="page1.html">صفحة1 </a></li>
                 <li><a href="page2.html">صفحة2</a></li>
-                <li><a href="Contact.html">إتصل بنا </a></li>
+                <li><a href="Contact.html">تقييم صفحة  </a></li>
             </ul>
         </nav>
     </header>
@@ -26,60 +26,37 @@
     <main>
         <section >
            <form action="#" method="post" class="contact" >
-             <fieldset style="width: 50%; height: 170px; padding: 10px; border: 1px solid blue;">
-                <legend>votre compte</legend>
-                <label for="clé-inscri"> clé inscription</label>
-                <input type="text" name="clé-inscri" id="clé-inscri"><br><br>
-                <label for="user">Nom d'utilisateur</label>
-                <input type="text" name="user" id="user"><br><br>
-                <label for="password">Mot de passe</label>
-                <input type="text" name="password" id="password">
+             <fieldset style="width: 50%;  padding: 10px; border: 1px solid blue; margin: auto;">
+                <legend>البيانات</legend>
+
+                <label for="prenom"> الاسم : </label>
+                <input type="text" name="prenom" id="prenom" class="form__txt" placeholder="إدخال إسم"><br><br>
+
+                <label for="nom">اللقب:</label>
+                <input type="text" name="nom" id="nom" class="form__txt" placeholder="إدخال لقب "><br><br>
+
+                <span >الجنس</span>
+                <div style="margin-right:22%;">
+                <label for="homme">ذكر  </label>
+                <input type="radio" id="homme" name="homme" value="ذكر" >
+                <label for="femme">أنثى  </label>
+                <input type="radio" id="femme" name="femme" value="أنثى"> <br><br>
+                </div>
+
+                <label for="ecole"> إسم مدرسة :</label>
+                <input type="text" name="ecole" id="ecole" class="form__txt" placeholder="إدخال إسم مدرسة" required><br><br>
+
+                <label for="note">  تقيمك لمحتوى صفحة : </label>
+                <input type="range" name="note" id="note" class="form__txt"  required><br><br>
+
+                <div class="btn"> 
+                    <input type="submit" value="إرسال" class="submit">     
+                    <input type="button" value="إلغاء" class="annuler">
+                </div>
 
              </fieldset>
 
-             <fieldset style="width: 50%; height: 345px; padding: 10px;margin-top: 5%; border: 1px solid blue;">
-                <legend>Information personnelles</legend>
-                <label for="age"> Age</label>
-                <input type="number" name="age" id="age"><br><br>
-                <label for="date">Date de naissance</label>
-                <input type="date" name="date" id="date"><br><br>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email"><br><br>
-
-                <label for="telephone">Numéro de Telephone</label>
-                <input type="tel" name="telephone" id="telephone"><br><br>
-                <label for="CV">Votre CV</label>
-                <input type="file" name="CV" id="CV"><br><br>
-                <label for="Pays">Votre Pays</label>
-                 <select name="Pays" id="Pays">
-                    <option value="Tunisie">Tunisie</option>
-                    <option value="Algérie">Algérie</option>
-                    <option value="France">France</option>
-                 </select><br><br>
-                 <span>Vos centre interet:</span>
-                <input type="checkbox" name="intret" id="intret">
-                <label for="intret"> Sport </label>
-                <input type="checkbox" name="lecture" id="lecture">
-                <label for="lecture"> Lecture </label>
-                <input type="checkbox" name="Travail" id="Travail">
-                <label for="Travail"> Travail Humanitaire </label>
-            </fieldset>
-         <div>
-            <span>Souhaitez vous recevoire nos actualités par mail:</span>
-            <label for="oui">Oui </label>
-            <input type="radio" id="oui" name="oui" value="oui">
-            <label for="non">Non </label>
-            <input type="radio" id="non" name="non" value="non">
-        </div> 
         
-        <div>
-            <label for="comment">Saissez un commentaire: </label><br>
-            <textarea name="comment" id="comment" cols="40" rows="5">Vos commentaire...</textarea>            
-        </div>
-        <div class="btn"> 
-         <input type="submit" value="Envoyer" class="submit">     
-         <input type="button" value="annuler" class="annuler">
-        </div>
            </form>
         </section>
     </main>

@@ -239,7 +239,14 @@ a:hover{
   .active, .dot:hover {
     background-color: #717171;
   }
-  
+   .form__txt{
+    width: 200px;
+    height: 34px;
+    margin-right: 15%;
+    border: 2px solid red;
+    border-radius: 20px;
+    padding: 10px;
+   }
   /* Fading animation */
   .fade {
     animation-name: fade;
